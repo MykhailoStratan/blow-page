@@ -1,0 +1,200 @@
+@font-face{
+    font-family: 'Montserrat-regular';   
+    src: url('/fonts/Montserrat-Regular.otf') format('opentype');   
+    font-weight: normal;   
+    font-style: normal;  
+}
+
+@font-face{
+    font-family: 'Montserrat-black';   
+    src: url('/fonts/Montserrat-Black.otf') format('opentype');   
+    font-weight: bold;   
+    font-style: bold;  
+}
+
+body, html {
+    max-width: 2400px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    background: rgb(54, 53, 53);
+    background: -moz-linear-gradient
+        (-45deg, rgba(117,117,117,1) 0%, rgba(51,51,51,1) 100%);
+    background: -webkit-gradient
+     (left top, right bottom, color-stop(0%, rgba(117,117,117,1)), color-stop(100%, rgba(51,51,51,1)));
+    background: -webkit-linear-gradient
+        (-45deg, rgba(117,117,117,1) 0%, rgba(51,51,51,1) 100%);
+    background: -o-linear-gradient
+        (-45deg, rgba(117,117,117,1) 0%, rgba(51,51,51,1) 100%);
+    background: -ms-linear-gradient
+        (-45deg, rgba(117,117,117,1) 0%, rgba(51,51,51,1) 100%);
+    background: linear-gradient
+        (135deg, rgba(117,117,117,1) 0%, rgba(51,51,51,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#757575', endColorstr='#333333', GradientType=1 );
+}
+
+body {
+    
+    background-image: linear-gradient(to right, #5e554b 4px, transparent 4px);
+    background-repeat: repeat;
+    background-size: 400px 100px;
+    background-position: 350px 0px;
+
+    
+}
+
+
+main {
+    max-width: 2100px;
+    max-height: 1200px;
+    width: 77%;
+    height: 77%;
+    background-color: #e0e0e0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    border-style: none;
+    border-radius: 15px;
+
+    -webkit-box-shadow: 0px 12px 50px 28px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 12px 50px 28px rgba(0,0,0,0.75);
+    box-shadow: 0px 12px 50px 28px rgba(0,0,0,0.75);
+
+    
+}
+
+header {
+    z-index: 10;
+    display: block;
+    background-image: url(images/blow-background-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-height: 1200px; 
+    height: 100%;
+    width: 96%;
+    float: right;
+    border-style: none;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    
+}
+
+header::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav {
+    display: block;
+    width: 45%;
+    float: right;
+}
+
+nav ul li {
+    float: left;
+    margin: 10px;
+    padding: 10px;
+    list-style-type: none;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Montserrat-regular';
+    text-transform: lowercase;
+    color: black;
+}
+
+.active {
+    background: black;
+    color: white;
+    mix-blend-mode: multiply;
+    padding: 7px 16px;
+    border-radius: 25px;
+}
+
+
+.logo {
+    display: block;
+    width: 35%;
+    float: left;
+    font-family: 'Montserrat-Black';
+    text-transform: lowercase;
+    font-size: 25px;
+    padding: 7px 55px;
+}
+
+aside {
+    display: block;
+    width: 3%;
+    float: left;
+}
+
+aside::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+button {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    margin-top: 42%;
+    padding: 0px 55px;
+    border-radius: 50px;
+    border-style: none;
+
+    background: black;
+    color: white;
+    mix-blend-mode: multiply;
+}
+
+button p {
+    text-decoration: none;
+    font-family: 'Montserrat-regular';
+    text-transform: uppercase;
+    
+}
+
+aside {
+    display: inline-block;
+    background-color: white;
+    height: 100%;
+    width: 4%;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    z-index: -5;
+
+}
+
+.aside-img {
+    display: block;
+    position: absolute;
+    bottom: 0.7em;
+    left: 0.7em;
+    width: 25px;
+}
+
+aside p {
+
+    position: relative;
+    bottom: -120px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg) ;
+    font-family: 'Montserrat-Black';
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 5px 5px;
+    margin: 0 auto;
+}
+
+.aside-gray {
+    color: gray;
+}
